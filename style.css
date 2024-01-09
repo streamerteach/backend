@@ -1,0 +1,84 @@
+/* Dennis snygga stilfil */
+
+/* Sidhuvudet logo, firmanamn och nav */
+header {
+    background-color: #1abc9c;
+    display: flex;  /* logon och nav är flex items */
+    align-items: center;
+}
+header img {
+    padding: 4px;
+    margin: 6px 6px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+#logo {
+    color: white;
+    padding-left: 16px;
+    font-size: xx-large;
+}
+
+/* Huvudmenyn */
+nav {
+    margin-left: auto;  /* skuffar menyn till högra kanten */
+}
+nav ul {
+    margin: 0px 10px; /* bort med inbyggd marginal (shortand 2) */
+    padding: 0; /* Bort med inbyggd padding */
+}
+nav li {
+    list-style: none;   /* bort med bollar */
+    float: left;  /* ordna element bredvid varann på desktop */
+    padding: 10px; /* lite till luft runt li */
+}
+nav li > a {
+    text-decoration: none; /* bort med underline */
+    color: white; /* bort med inbyggd blå/lila text */
+    padding: 8px;                   /* Förberedelse för hover */
+    border-radius: 4px;
+}
+nav a:hover {
+    background-color: #00AA89;    /* Byter bakgrund on hover "pseudoklass" */ 
+}
+
+/* Allmängällande stilar */
+body {
+    background-color: #3D3D3D;
+    margin: 0;
+    font-family: "Helvetice Neue", Helvetica, sans-serif;
+}
+#container {
+    background-color: #fff;
+    color: #3D3D3D;
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+}
+article {
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1abc9c;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 790px;
+    padding: 5px;
+}
+
+/* Responsiv styling */
+@media (max-width: 640px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav li {
+        float: none;
+    }
+    
+}
